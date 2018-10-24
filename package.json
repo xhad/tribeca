@@ -19,8 +19,8 @@
     "collections": "3.0.0",
     "compression": "1.6.1",
     "connect": "3.4.1",
-    "express": "4.13.4",
-    "grunt": "0.4.5",
+    "express": "4.15.5",
+    "grunt": "1.0.0",
     "grunt-browserify": "5.0.0",
     "grunt-contrib-copy": "1.0.0",
     "grunt-contrib-watch": "1.0.0",
@@ -31,25 +31,29 @@
     "mongodb": "2.1.11",
     "node-uuid": "1.4.7",
     "q": "1.4.1",
-    "request": "2.69.0",
+    "request": "2.81.0",
     "shortid": "2.2.4",
     "socket.io": "1.4.5",
     "socket.io-client": "1.4.5",
     "typescript": "1.8.9",
     "typings": "0.8.1",
     "utf-8-validate": "1.2.1",
-    "ws": "1.0.1"
+    "ws": "1.0.1",
+    "snyk": "^1.105.0"
   },
   "devDependencies": {
     "mocha": "2.4.5"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
     "url": "git@github.com:michaelgrosner/tribeca.git"
   },
   "author": "Michael Grosner",
-  "license": "ISC"
+  "license": "ISC",
+  "snyk": true
 }
