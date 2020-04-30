@@ -25,7 +25,7 @@
     "grunt-contrib-copy": "1.0.0",
     "grunt-contrib-watch": "1.0.0",
     "grunt-ts": "5.4.0",
-    "jquery": "2.2.2",
+    "jquery": "3.5.0",
     "lodash": "4.6.1",
     "moment": "2.12.0",
     "mongodb": "2.1.11",
@@ -38,18 +38,22 @@
     "typescript": "1.8.9",
     "typings": "0.8.1",
     "utf-8-validate": "1.2.1",
-    "ws": "1.0.1"
+    "ws": "1.0.1",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "mocha": "2.4.5"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
     "url": "git@github.com:michaelgrosner/tribeca.git"
   },
   "author": "Michael Grosner",
-  "license": "ISC"
+  "license": "ISC",
+  "snyk": true
 }
